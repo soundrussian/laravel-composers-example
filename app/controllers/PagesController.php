@@ -4,12 +4,14 @@ class PagesController extends BaseController {
 
 	public function index()
 	{
-		return View::make('home');
+        $latest_news = News::latest()->get();
+		return View::make('home', compact('latest_news'));
 	}
 
 	public function about()
 	{
-		return View::make('about');
+        $latest_news = News::latest()->get();
+		return View::make('about', compact('latest_news'));
 	}
 
 }
