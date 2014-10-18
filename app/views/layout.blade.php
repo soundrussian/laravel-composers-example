@@ -23,7 +23,7 @@
         @yield('content')
       </div>
     </div>
-  @include('_latest_news')
+  {{ View::make('_latest_news') }}
   </div>
 </body>
 </html>
