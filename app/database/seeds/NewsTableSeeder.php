@@ -10,7 +10,8 @@ class NewsTableSeeder extends Seeder
         {
             News::create(array(
                 'title' => "Блогозапись 0$i",
-                'text'  => "Текст блогозаписи."
+                'text'  => "Текст блогозаписи.",
+                'created_at' => \Carbon\Carbon::now()->subMonth()->addDays($i)
             ));
         }
 
