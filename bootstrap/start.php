@@ -59,8 +59,6 @@ $framework = $app['path.base'].
 
 require $framework.'/Illuminate/Foundation/start.php';
 
-require $app['path.base'].'/app/widgets/LatestNews.php';
-
 /*
 |--------------------------------------------------------------------------
 | Return The Application
