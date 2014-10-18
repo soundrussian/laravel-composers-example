@@ -15,4 +15,9 @@ class BaseController extends Controller {
 		}
 	}
 
+	public function __construct()
+	{
+		$this->latest_news = News::latest()->get();
+	}
+
 }
